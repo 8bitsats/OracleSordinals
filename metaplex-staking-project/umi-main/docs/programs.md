@@ -1,0 +1,1 @@
+> :warning: **Not updated anymore**: Please see the page on the [Developer Hub](https://developers.metaplex.com/umi/programs) instead!

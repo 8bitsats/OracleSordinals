@@ -1,0 +1,85 @@
+{
+  "name": "@metaplex-foundation/umi",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "description": "A JavaScript Framework for Solana clients",
+  "keywords": [
+    "solana",
+    "client",
+    "framework",
+    "interfaces"
+  ],
+  "author": "Metaplex Maintainers <contact@metaplex.com>",
+  "homepage": "https://metaplex.com",
+  "repository": {
+    "url": "https://github.com/metaplex-foundation/umi.git"
+  },
+  "scripts": {
+    "clean": "turbo run clean",
+    "build": "turbo run build",
+    "build:docs": "typedoc",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "format": "prettier --check packages/",
+    "format:fix": "prettier --write packages/",
+    "validator": "DEBUG='amman:(info|error|debug)' CI=1 amman start",
+    "validator:stop": "amman stop",
+    "packages:new": "node configs/generate-new-package.mjs",
+    "packages:change": "changeset",
+    "packages:version": "changeset version",
+    "packages:publish": "turbo run build && changeset publish --no-git-tag"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-typescript": "^7.16.7",
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.0",
+    "@metaplex-foundation/amman": "^0.12.0",
+    "@metaplex-foundation/amman-client": "^0.2.2",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-replace": "^4.0.0",
+    "@rollup/plugin-terser": "^0.2.0",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "chalk": "^5.2.0",
+    "depcheck": "^1.4.3",
+    "eslint": "^8.33.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^4.0.0",
+    "prettier": "^2.8.4",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.72.0",
+    "rollup-plugin-polyfill-node": "^0.9.0",
+    "turbo": "^1.9.1",
+    "typedoc": "^0.23.0",
+    "typedoc-plugin-resolve-crossmodule-references": "^0.3.3",
+    "typescript": "^4.9.5",
+    "vercel": "^28.16.1"
+  },
+  "engines": {
+    "node": ">=16.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
+  "packageManager": "pnpm@8.15.9+sha512.499434c9d8fdd1a2794ebf4552b3b25c0a633abcee5bb15e7b5de90f32f47b513aca98cd5cfd001c31f0db454bc3804edccd578501e4ca293a6816166bbd9f81",
+  "pnpm": {
+    "patchedDependencies": {
+      "@changesets/assemble-release-plan@5.2.3": "patches/@changesets__assemble-release-plan@5.2.3.patch"
+    }
+  }
+}

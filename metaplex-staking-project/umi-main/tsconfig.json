@@ -1,0 +1,55 @@
+{
+  "include": ["packages/*/src", "packages/*/test"],
+  "exclude": ["node_modules", "packages/*/node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "sourceMap": true,
+    "noEmit": false,
+    "noEmitOnError": true,
+    "emitDeclarationOnly": true,
+
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "skipLibCheck": true,
+
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": false,
+    "strict": true,
+    "isolatedModules": true,
+
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": false,
+    "jsx": "preserve",
+    "stripInternal": true
+  },
+  "typedocOptions": {
+    "entryPoints": ".",
+    "entryPointStrategy": "packages",
+    "out": "typedoc",
+    "readme": "README.md",
+    "name": "Umi — API References",
+    "includeVersion": true,
+    "excludeNotDocumented": false,
+    "categorizeByGroup": false,
+    "defaultCategory": "Other",
+    "categoryOrder": [
+      "Context and Interfaces",
+      "Signers and PublicKeys",
+      "Serializers",
+      "Transactions",
+      "Rpc",
+      "Http",
+      "Storage",
+      "Programs",
+      "Accounts",
+      "*"
+    ]
+  }
+}
