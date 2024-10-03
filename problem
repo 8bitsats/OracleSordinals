@@ -1,0 +1,101 @@
+lockdown-install.js:1 Removing unpermitted intrinsics
+injected.js:1 Backpack couldn't override `window.ethereum`.
+N7i @ injected.js:1
+O7i @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1Understand this warning
+injected.js:1 TypeError: Cannot redefine property: ethereum
+    at Function.defineProperties (<anonymous>)
+    at c.setWindowEthereum (injected.js:1:7218994)
+    at c.init (injected.js:1:7214329)
+    at injected.js:1:7219507
+    at injected.js:1:7228592
+    at injected.js:1:7228596
+c.setWindowEthereum @ injected.js:1
+c.init @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1Understand this error
+injected.js:1 Provider initialised
+injected.js:1 Provider initialised
+injected.js:1 Provider initialised
+injected.js:1 Provider initialised
+injected.js:1 Provider initialised
+injected.js:1 Provider initialised
+injected.js:1 TronWeb: 'tronWeb.sidechain' is deprecated and may be removed in the future. Please use the 'sunweb' sdk instead. For more information, see: https://github.com/tronprotocol/sun-network/tree/develop/js-sdk
+e @ injected.js:1
+n @ injected.js:1
+c._createTronWeb @ injected.js:1
+c.expose @ injected.js:1
+c.init @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1Understand this warning
+injected.js:1 Deprecation warning: tabReply will be removed
+(anonymous) @ content.js:1
+c.reply @ content.js:1
+(anonymous) @ content.js:1
+await in (anonymous)
+d.emit @ content.js:1
+(anonymous) @ content.js:1
+t.send @ injected.js:1
+c.send @ injected.js:1
+c.getProviderInitData @ injected.js:1
+c.initSelectedAddress @ injected.js:1
+c.initEthereumProvider @ injected.js:1
+c.init @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+Show 5 more frames
+Show lessUnderstand this warning
+injected.js:1 Deprecation warning: tabReply will be removed
+(anonymous) @ content.js:1
+c.reply @ content.js:1
+(anonymous) @ content.js:1
+await in (anonymous)
+d.emit @ content.js:1
+(anonymous) @ content.js:1
+t.send @ injected.js:1
+c.send @ injected.js:1
+c.getProviderInitData @ injected.js:1
+c.getInitTronWeb @ injected.js:1
+c.initTronProvider @ injected.js:1
+c.init @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+Show 5 more frames
+Show lessUnderstand this warning
+injected.js:1 Deprecation warning: tabReply will be removed
+(anonymous) @ content.js:1
+c.reply @ content.js:1
+(anonymous) @ content.js:1
+await in (anonymous)
+d.emit @ content.js:1
+(anonymous) @ content.js:1
+t.send @ injected.js:1
+c.send @ injected.js:1
+c._initRequest @ injected.js:1
+c.init @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+(anonymous) @ injected.js:1
+Show 5 more frames
+Show lessUnderstand this warning
+injected.js:1 TronLink initiated
+chunk-25KRWBCN.js?v=f20b427d:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+solanaActionsContentScript.js:9 Uncaught (in promise) TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at solanaActionsContentScript.js:9:77701
+(anonymous) @ solanaActionsContentScript.js:9
+Promise.then
+my @ solanaActionsContentScript.js:9
+tk @ solanaActionsContentScript.js:13
+iB @ solanaActionsContentScript.js:1086
+await in iB
+(anonymous) @ solanaActionsContentScript.js:1086
+(anonymous) @ solanaActionsContentScript.js:1086
+Show 6 more frames
+Show lessUnderstand this error
+inject-script.js:2 MyDoge API initialized
+inject-script.js:2 MyDoge API dispatched to window object
